@@ -1,1 +1,3 @@
-# mcda-hotel-master
+This is an online hotel reservation system.
+
+Demo
