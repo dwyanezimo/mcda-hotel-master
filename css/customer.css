@@ -1,0 +1,182 @@
+fieldset {
+	border: 2px outset #000000;
+	box-shadow: -8px 14px 30px 5px rgba(0, 0, 0, 0.6);
+	background: linear-gradient(to right, rgba(243,226,199,1) 0%, rgba(193,158,103,0.87) 36%, rgba(179,151,110,0.76) 68%, rgba(233,212,179,0.65) 100%);
+  width: 900px;
+	height: 600px;
+	text-align: center;
+	border-radius: 23px 23px 23px 23px;
+	margin-left: 8.0em;
+  box-shadow: 10px 10px 20px 2px rgba(0,0,0,0.75);
+  
+  
+  
+}
+legend{
+	font-size:50px;
+	
+}
+table {
+  border-collapse: collapse;
+  white-space: nowrap;
+  width:500px;
+  text-align: center;
+}
+td {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-family: verdana,arial,helvetica,sans-serif;
+    font-size: medium;
+}
+th {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+input[type=submit] {
+	width: 100px;
+	right: 20px;
+	bottom: 20px;
+	background: #fcfcfc;
+	color: #000;
+	font-family: average;
+	height: 35px;
+	font-size: 18px;
+	border-radius: 8px;
+	border: 3px outset #999;
+	margin-right: 20px;
+	cursor: pointer;
+}
+input[type=reset] {
+	width: 100px;
+	right: 20px;
+	bottom: 20px;
+	background: #fcfcfc;
+	color: #000;
+	font-family: average;
+	height: 35px;
+	font-size: 18px;
+	border-radius: 8px;
+	border: 3px outset #999;
+	cursor: pointer;
+}
+input[type=text] {
+	width: 200px;
+	right: 20px;
+	bottom: 20px;
+	background: #fcfcfc;
+	color: #000;
+	font-family: cambria;
+	height: 30px;
+	font-size: 14px;
+	border-radius: 8px;
+	border: 1px solid #999;
+}
+input[type=number] {
+	width: 200px;
+	right: 20px;
+	bottom: 20px;
+	background: #fcfcfc;
+	color: #000;
+	font-family: cambria;
+	height: 30px;
+	font-size: 14px;
+	border-radius: 8px;
+	border: 1px solid #999;
+	
+}
+label {
+	font-size: 20px;
+	font-family: Average;
+}
+.bar
+{
+  background: linear-gradient(to right, rgba(243,226,199,1) 0%, rgba(193,158,103,1) 50%, rgba(182,141,76,1) 51%, rgba(233,212,179,1) 100%);
+  height: 20px;
+  
+}
+.nav{
+  text-align: right;
+  vertical-align: right;
+  
+}
+select
+{   width: 200px;
+	right: 20px;
+	bottom: 20px;
+	background: #fcfcfc;
+	color: #000;
+	font-family: cambria;
+	height: 30px;
+	font-size: 14px;
+	border-radius: 8px;
+	border: 1px solid #999;
+}
+header.main {
+	width: 100%;
+}
+
+header.main .center {
+	height: 98px;
+	position: relative;
+}
+
+header.main .logo {
+	position: absolute;
+	background: url("../css/images/logo.png") no-repeat center;
+	width: 254px;
+	height: 139px;
+	left: 11px;
+	top: -21px;
+	margin-top: -25px;
+}
+
+header.main nav {
+	position: absolute;
+	height: 33px;
+	right: 0;
+	top: 50%;
+	margin-top: -16px;
+	
+}
+
+header.main nav>ul>li {
+	display: inline-block;
+	position: relative;
+}
+
+header.main nav>ul>li>a {
+	display: block;
+	font-family: 'PT Sans', 'sans-serif';
+	font-size: 15px;
+	color: #38383f;
+	line-height: 31px;
+	text-align: center;
+	padding: 0 19px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	border-top-right-radius: 3px;
+	border-bottom-right-radius: 3px;
+	border-bottom-left-radius: 3px;
+	border-top-left-radius: 3px;
+	-moz-background-clip: padding;
+	-webkit-background-clip: padding-box;
+	background-clip: padding-box;
+	text-decoration: none;
+}
+
+header.main nav>ul>li:hover>a, header.main nav>ul>li.active>a {
+	color: #fff;
+	background: #f65339;
+	border-top-right-radius: 3px;
+	border-bottom-right-radius: 3px;
+	border-bottom-left-radius: 3px;
+	border-top-left-radius: 3px;
+	-moz-background-clip: padding;
+	-webkit-background-clip: padding-box;
+	background-clip: padding-box;
+	box-shadow: 0 -2px 0 0 #d8422a;
+	text-decoration: none;
+}

@@ -1,0 +1,150 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link href="./css/jquery-ui.css" rel="stylesheet" type="text/css" />
+<title>HOTEL TRANSYLVANIA</title>
+<meta name="description" content="Book">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Styles -->
+<link rel="stylesheet" href="css/general.css">
+
+<!-- Fonts -->
+<link
+	href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800'
+	rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700'
+	rel='stylesheet' type='text/css'>
+<style type="text/css">
+a:link {
+	color: #FFF;
+}
+</style>
+<script type="text/javascript">
+	function getdetails() {
+		var e = document.getElementById("drop");
+		var url = "http://localhost:8080/WebApp-01/rest/hello/a?bla="
+				+ e.options[e.selectedIndex].value;
+		var representationOfDesiredState = "The cheese is old and moldy, where is the bathroom?";
+
+		var client = new XMLHttpRequest();
+
+		client.open("GET", url, false);
+
+		client.setRequestHeader("Content-Type", "application/json");
+
+		client.send(representationOfDesiredState);
+
+		if (client.status == 200)
+			alert(client.responseText)
+		else
+			alert("The request did not succeed!\n\nThe response status was: "
+					+ client.status + " " + client.statusText + ".");
+	}
+</script>
+
+</head>
+<body>
+
+
+	<!-- Header Main -->
+	<header class="main">
+		<div class="center">
+			<div class="logo">
+				<a href="index.html"></a>
+			</div>
+			<!-- Navigation -->
+			<nav>
+				<ul>
+					<li class="active"><a href="index.html">Home</a></li>
+					<li><a href="rooms.html">Rooms</a></li>
+					<li><a href="Customer.jsp">Book</a></li>
+					<li><a href="contact.html">Contact</a></li>
+
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<!-- Slider -->
+	<div id="slider">
+		<ul class="slides">
+			<li><img src="css/images/slide1.jpg" alt="" /></li>
+			<li><img src="css/images/slide2.jpg" alt="" /></li>
+			<li><img src="css/images/slide3.jpg" alt="" /></li>
+		</ul>
+	</div>
+
+
+
+	<!-- Book -->
+	<section class="search cf">
+		<br> <br> <br>
+		<div class="center">
+			<div class="cf">
+				<div class="col-7" style="height: 103px;">
+					<h3 style="margin-right: 10px">Thank you!</h3>
+					<h4 style="margin-right: 10px">Book one of our luxury room
+						today</h4>
+				</div>
+				<div class="col-13">
+					<a style="font-color:white;" href="Customer.jsp">Book today</a>
+				</div>
+				<div class="col-5">
+					<form>
+						<h2 style="margin-left: 10px;">Search for Room Availability</h2>
+						<select id="drop" name="bla">
+							<option value="Single">Single Room</option>
+							<option value="Double">Double Room</option>
+							<option value="Superior">Superior Room</option>
+							<option value="Suite">Suite Room</option>
+						</select> <input id="submit" type="submit" value="search"
+							onclick="getdetails()" />
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Section Bottom -->
+	<footer>
+		<div class="line">
+			<div class="center cf">
+				<div class="links">
+					<a href="index.html">Home</a> <a href="contact.html">Contact Us</a>
+				</div>
+				<div class="copy">
+					© 2015 All rights reserved. <span>Hotel Transylvania</span>
+				</div>
+			</div>
+		</div>
+
+
+	</footer>
+
+
+	<!-- Libs -->
+	<script src="js/libs/jquery-1.10.2.min.js"></script>
+	<script src="js/libs/jquery.flexslider-min.js"></script>
+
+	<!-- Custom -->
+	<script src="js/scripts.js"></script>
+	<script>
+		InitHome();
+	</script>
+
+	<script type="text/javascript" src="./js/jquery.min.js"></script>
+	<script src="./js/jquery-ui.min.js"></script>
+	<script>
+		$(document).ready(function() {
+			$("#datepicker").datepicker({
+				dateFormat : 'yy-mm-dd'
+			}).val();
+			$("#datepicker2").datepicker({
+				dateFormat : 'yy-mm-dd'
+			}).val();
+		});
+	</script>
+</body>
+</html>
